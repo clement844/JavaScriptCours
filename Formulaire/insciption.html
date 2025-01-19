@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="formulaire.css">
+</head>
+<body>
+    <h1>Formulaire d'inscription</h1> <!-- titre page-->
+    <form id="form-inscription">
+        <!-- pseudo -->
+        <!--associe étiquette au champ avec l'attribut for-->
+        <label for="pseudo">Pseudo :</label> 
+        <!-- zone de texte pour pseudo avec 6 minimum et rend le champ obligatoire -->
+        <input type="text" id="pseudo" name="pseudo" placeholder="6 caractères minimum" required> 
+        <br><br>
+        <br><br>
+
+        <!-- email -->
+         <!--associe étiquette au champ avec l'attribut for-->
+        <label for="email">Email :</label>
+        <!-- zone de email rien d'autre et rend champ obligatoire -->
+        <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+        <br><br>
+
+        <!-- mot de passe -->
+         <!--associe étiquette au champ avec l'attribut for-->
+        <label for="mdp">Mot de passe :</label>
+        <!-- zone code rien d'autre et rend champ obligatoire -->
+        <input type="password" id="mdp" name="mdp" placeholder="8 caractères minimum" required>
+        <br><br>
+
+        <!-- mot de passe verification-->
+         <!--associe étiquette au champ avec l'attribut for-->
+        <label for="mdp-verif">Vérification Mdp :</label>
+        <!-- zone vérification code rien d'autre et rend champ obligatoire -->
+        <input type="password" id="mdp-verif" name="mdp-verif" placeholder="Confirmez votre mot de passe" required>
+        <br><br>
+
+        <!-- QCM -->
+        <fieldset> <!--regroupe des champs liés-->
+            <legend>Quelle est votre classe préférée dans Seigneur des Anneaux ?</legend>
+            <!--permet choisir une seule option parmi plusieurs.-->
+            <input type="radio" id="mage" name="classe" value="mage" required>
+            <!--associe étiquette au champ avec l'attribut for-->
+            <label for="mage">Mage</label><br>
+            <input type="radio" id="guerrier" name="classe" value="guerrier">
+            <!--associe étiquette au champ avec l'attribut for-->
+            <label for="guerrier">Guerrier</label><br>
+            <input type="radio" id="archer" name="classe" value="archer">
+            <!--associe étiquette au champ avec l'attribut for-->
+            <label for="archer">Archer</label>
+        </fieldset>
+        <br>
+
+        <!-- bouton Envoyer le formulaire d'inscription-->
+        <button type="submit">S'inscrire</button>
+    </form>
+
+    <!-- bouton Retour à l'accueil -->
+    <a id="btn-retour" href='pageaccueil.html'>Retour à l'accueil</a>
+
+    <script src="formulaire.js"></script>
+</body>
+</html>
