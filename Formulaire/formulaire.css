@@ -1,0 +1,87 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #2e2b2b; /* Fond sombre thème*/
+    color: #f2f2a0; /* Couleur dorée pour texte */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #f2f2a0; /* Couleur dorée pour le titre */
+    margin-top: 20px;
+}
+
+form {
+    background-color: #4a2503; /* Fond formulaire thème */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(250, 229, 0, 0.3); /* Ombre dorée */
+    width: 300px;
+}
+
+label {
+    font-weight: bold;
+    color: #f2f2a0; /* Couleur dorée pour étiquette */
+}
+
+input, fieldset {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #f2f2a0; /* Bordure dorée */
+    border-radius: 4px;
+    background-color: #2e2b2b; /* Fond sombre pour champs */
+    color: #f2f2a0; /* Texte doré */
+}
+
+input:focus {
+    border-color: #f2d700; /* Bordure dorée plus claire focus */
+    outline: none;
+}
+
+input.correct {
+    border-color: green; /* Vert pour champs valides */
+}
+
+input.incorrect {
+    border-color: red; /* Rouge pour champs invalides */
+}
+
+button {
+    background-color: #f2d700; /* Bouton doré */
+    color: #2e2b2b; /* Texte sombre pour contraster */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d4b300; /* Couleur légèrement plus sombre survol */
+}
+
+btn-retour {
+    position: fixed;
+    bottom: 20px; /* Distance depuis le bas de la page */
+    right: 10px; /* Distance depuis le bord droit */
+    background-color: #4a2503; /* Fond sombre du bouton */
+    color: #f2f2a0; /* Texte doré */
+    border: 2px solid #f2f2a0; /* Bordure dorée */
+    padding: 5px 10px; /* Réduction de la taille du bouton */
+    border-radius: 20px; /* Bordure arrondie */
+    cursor: pointer;
+    font-size: 12px; /* Taille de police réduite */
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+btn-retour:hover {
+    background-color: #f2d700; /* Fond doré au survol */
+    color: #2e2b2b; /* Texte sombre au survol */
+}
