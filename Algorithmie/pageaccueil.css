@@ -1,0 +1,220 @@
+/* Base de la page */
+body {
+    font-family: 'Roboto', sans-serif; /* Utilisation de la police "Roboto" pour l'ensemble du texte */
+    margin: 0; /* Supprime la marge par défaut du body */
+    padding: 0; /* Supprime le padding par défaut du body */
+    background: url('image/041_lor019bs.jpg') no-repeat center center/cover;
+    background-size: 100%;
+    color: #2a150c; /* Couleur de texte claire pour contraster avec le fond sombre */
+    display: flex; /* Utilisation de Flexbox pour organiser le contenu */
+    flex-direction: column; /* Alignement des éléments du body en colonne */
+    min-height: 100vh; /* Le body prend toute la hauteur de la fenêtre */
+}
+
+.Zone-principale {
+    flex: 1; /* Permet au contenu principal d'occuper tout l'espace restant */
+}
+
+/* HEADER */
+header {
+    display: flex; /* Utilisation de Flexbox pour l'alignement horizontal du logo et du titre */
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; /* Centre le contenu verticalement */
+    background: url('image/champs\ de\ bataille.avif') no-repeat center center/cover;
+    padding: 10px; /* Ajoute un espacement de 20px autour du header */
+}
+
+header .conteneur-logo {
+    margin-right: 15px; /* Espace entre le logo et le titre */
+
+}
+
+header .logo {
+    height: 120px; /* Définition de la hauteur du logo */
+}
+
+header .titre {
+    font-size: 36px; /* Taille du texte pour le titre */
+    color: #f2f2a0; /* Couleur dorée pour le titre */
+    text-transform: uppercase; /* Met le titre en majuscules */
+    font-family: 'Roboto', sans-serif; /* Utilisation de la police "Roboto" pour le titre */
+}
+
+/* FIL D'ARIANE */
+.Fil-A {
+    background-color: #4a2503; /* Fond violet pour le fil d'ariane */
+    padding: 10px 20px; /* Ajout de padding (espacement interne) autour du fil d'ariane */
+    text-align: center; /* Centre le texte horizontalement */
+    font-size: 16px; /* Taille de police plus petite pour le fil d'ariane */
+}
+
+.Fil-A a {
+    color: #f2f2a0; /* Couleur dorée pour les liens */
+    text-decoration: none; /* Enlève le soulignement par défaut des liens */
+    padding:5px; /* Ajoute un peu de padding entre les liens */
+}
+
+.Fil-A a:hover {
+    text-decoration: underline; /* Sous-ligne le lien au survol */
+}
+
+/* ZONE DES CARTES */
+.page-accueil {
+    flex-grow: 1; /* Prend tout l'espace restant de la zone principale */
+    text-align: center; /* Centre le contenu de la zone des cartes */
+    padding: 20px; /* Ajoute un padding autour de la zone des cartes */
+}
+
+.choisir-titre {
+    font-size: 60px; /* Taille de la police du titre "Choisis ta carte" */
+    margin-bottom: 30px; /* Ajoute un espace en bas du titre */
+    color: #000000; /* Couleur dorée pour le titre*/
+    text-transform: uppercase; /* Met le titre en majuscules */
+    font-weight : bold; /* texte en gras*/
+    text-shadow :  0 0 5px #ff0000; /* ombre derrière texte*/
+    font-family: 'Roboto', sans-serif; /* Utilisation de la police "Roboto" pour le titre */
+}
+
+.text1 {
+    font-size: 25px; /* Taille de la police du titre "Choisis ta carte" */
+    margin-bottom:20px; /* Ajoute un espace en bas du texte */
+    color: #000000; /* Couleur dorée pour le titre*/
+    font-weight : bold; /* texte en gras*/
+    text-shadow :  0 0 5px #ff0000; /* ombre derrière texte*/
+    font-family: 'Roboto', sans-serif; /* Utilisation de la police "Roboto" pour le titre */
+}
+
+.imageanim{
+    text-align: center; /* Centre le contenu de la zone des cartes */
+    margin-bottom:5px; /* Ajoute un espace en bas des gifs */
+}
+
+/* Responsivité : Pour les petits écrans */
+@media screen and (max-width: 768px) {
+   
+}
+
+footer {
+    display: flex; /* utilisation de Flexbox pour l'alignement horizontal du logo et du titre */
+    justify-content: left; /* centre le contenu horizontalement */
+    align-items: left; /* centre le contenu verticalement */
+    background: url('image/champs\ de\ bataille.avif') no-repeat center center/cover;
+    padding: 20px; /* ajoute un espacement de 20px autour du header */
+    font-size: 10px; /* taille de la police pour le footer */
+    color: #f2f2a0; /* couleur dorée pour le titre */
+}
+
+
+
+/* Partie semaine 2 coding*/
+
+
+
+/* bouton d'identification ou inscription */
+.identification-button {
+    position: absolute; /* positionnement absolu le bouton haut droite */
+    top: 10px; /* distance haut page */
+    right: 10px; /* distance droite page */
+    background-color: #4a2503; /* couleur fond bouton */
+    color: #f2f2a0; /* couleur texte */
+    border: none; /* no bordure */
+    padding: 10px 20px; /* espacement vide dans bouton */
+    font-size: 16px; /* taille police */
+    border-radius: 5px; /* coins arrondis :) */
+    cursor: pointer; /* curseurforme main survol */
+    transition: background-color 0.3s ease; /* l'effet au survol */
+    z-index: 1000; /* bouton au-dessus des autres éléments */
+}
+
+.identification-button:hover { /* inversion des couleurs quand survole*/
+    background-color: #f2f2a0; /* couleur fond survol */
+    color: #4a2503; /* couleur texte survol */
+}
+
+
+
+
+/* partie Tabs */
+
+.tabs {
+    display: flex;
+    justify-content: space-around; /*espace égale*/
+    list-style: none; /*supprime les puces ou numéros par défaut listes*/
+    padding: 0; /*supprime les puces ou numéros par défaut listes*/
+    margin: 20px 0; /*supprime l'espace interne du conteneur des onglets*/
+    background-color: #eee;
+    border-radius: 8px;  /*arrondit coin conteneur*/
+    overflow: hidden; /* cache tout contenu qui dépasse limites */
+}
+
+.tab {
+    flex: 1;
+    text-align: center; /* centre texte horizontalement intérieur de chaque onglet*/
+    padding: 10px 15px; /* ajoute espace interne de 10 pixels verticalement et 15 pixels horizontalement*/
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+    transition: background-color 0.3s; /* ajoute transition fluide de 0,3 seconde*/
+}
+
+.tab:hover {
+    background-color: #ddd; /* change couleur fond onglet en gris moyen lorsque souris passe dessus*/
+}
+
+.tab-active {
+    background-color: #333; /*définit couleur fond gris pour onglet actuellement actif.*/
+    color: #fff; /* change changé pour contraste*/
+}
+
+
+/* partie bouton dark */ 
+
+.dark-mode-button {
+    position: absolute;
+    top: 10px; /* écarte haute de page*/ 
+    right: 150px; /* place le bouton à gauche bouton S'inscrire */
+    background-color: #4a2503;
+    color: #f2f2a0;
+    border: none; /*supprime bordures par défaut bouton*/ 
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer; /*change curseur en main lorsqu'on survole bouton*/
+    transition: background-color 0.3s ease;
+    
+}
+
+
+.dark-mode-button:hover { /*changement de couleur survol*/
+    background-color: #f2f2a0;
+    color: #4a2503;
+}
+
+body.dark-mode { /*définit couleur sombre pour body quand mode activer*/
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header.dark-mode { /* couleur sombre pour header quand mode activer*/
+    background-color: #1e1e1e;
+}
+
+.Fil-A.dark-mode { /*la même chose pour fil-A*/
+    background-color: #333333;
+}
+
+.tabs.dark-mode { /*la même chose pour tabs*/
+    background-color: #444444;
+}
+
+.tab.dark-mode { /*la même chose pour tab*/
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.tab-active.dark-mode { /*la même chose pour tab quand celui ci est actif*/
+    background-color: #555555;
+    color: #ffffff;
+}
+
+
